@@ -75,33 +75,34 @@ body{
 .social-media{
     position: absolute;
     grid-column: 2;
-    margin-right: 20px;
     font-size: 20px;
     width: 100%;
     transition: 0.2s;
     opacity: 0;
 }
 
-.mal{
+.red{
     display: grid;
     grid-template-columns: 1% 99%;
     place-items: center;
+    margin: 5px;
 }
 
-.mal>img{
+.red>img{
     height: 30px;
     width: 30px;
-    margin-left: 80px;
+    margin-left: 60px;
 }
 
-.mal>p{
-    margin: 10px;
+.red>a{
+    margin: 7px;
+    color: #FFC0CB;
 }
 
 #tarjeta:hover {
     transform: scale(1.05);
-    height: 330px;
-    width: 600px;
+    height: 300px;
+    width: 580px;
 }
 
 #tarjeta:hover .welcome-text {
