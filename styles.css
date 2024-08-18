@@ -60,19 +60,16 @@ body{
 }
 
 .welcome-icon{
-    grid-column: 1;
     margin-right: 49px;
     border-radius: 17px;
     transition: transform 0.2s ease-in-out;
 }
 
 .welcome-text{
-    grid-column: 2;
     margin-right: 20px;
     font-size: 26px;
     width: 100%;
     transition: transform 0.2s ease-in-out;
-    
 }
 
 .social-media{
@@ -92,6 +89,25 @@ body{
 #tarjeta:hover .welcome-text {
     transform: scale(1);
 }
+
+@media screen and (max-width: 564px) {
+    #tarjeta{
+        grid-template-rows: 50% 50%;
+        height: 450px;
+        width: 300px;
+    }
+
+    .welcome-icon{
+        margin-right: -150px;
+        grid-row: 1;
+    }
+    
+    .welcome-text{
+        grid-row: 2;
+        text-align: center;
+        margin-right: -150px;
+    }
+  }
 
 #game{
     position: absolute;
