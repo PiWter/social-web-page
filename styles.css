@@ -69,25 +69,29 @@ body{
     margin-right: 20px;
     font-size: 26px;
     width: 100%;
-    transition: transform 0.2s ease-in-out;
+    transition: 0.2s;
 }
 
 .social-media{
+    position: absolute;
     grid-column: 2;
     margin-right: 20px;
-    font-size: 26px;
+    font-size: 20px;
     width: 100%;
-    transition: transform 0.2s ease-in-out;
-    display:none;
+    transition: 0.2s;
+    opacity: 0;
 }
 
 #tarjeta:hover {
     transform: scale(1.05);
 }
 
-#tarjeta:hover .welcome-icon,
 #tarjeta:hover .welcome-text {
-    transform: scale(1);
+    opacity: 0;
+}
+
+#tarjeta:hover .social-media {
+    opacity: 1;
 }
 
 @media screen and (max-width: 564px) {
@@ -107,7 +111,7 @@ body{
         text-align: center;
         margin-right: -150px;
     }
-  }
+}
 
 #game{
     position: absolute;
