@@ -55,7 +55,7 @@ body{
     width: 500px;
     border-radius: 25px;
     backdrop-filter: blur(14px) brightness(.5);
-    transition: transform 0.2s ease-in-out;
+    transition: 0.2s;
     transform-origin: center; 
 }
 
@@ -69,7 +69,7 @@ body{
     margin-right: 20px;
     font-size: 26px;
     width: 100%;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .social-media{
@@ -82,8 +82,25 @@ body{
     opacity: 0;
 }
 
+.mal{
+    display: grid;
+    grid-template-columns: 1% 99%;
+    place-items: center;
+}
+
+.mal>img{
+    height: 30px;
+    width: 30px;
+}
+
+.mal>p{
+    margin: 10px;
+}
+
 #tarjeta:hover {
     transform: scale(1.05);
+    height: 330px;
+    width: 600px;
 }
 
 #tarjeta:hover .welcome-text {
