@@ -104,13 +104,14 @@ body{
 
 @media screen and (max-width: 564px) {
     #tarjeta{
-        grid-template-rows: 50% 50%;
+        grid-template-rows: repeat(2, 1fr);
         height: 450px;
         width: 300px;
     }
 
     .welcome-icon{
         margin-right: -150px;
+        margin-top: 10px;
         grid-row: 1;
     }
     
@@ -118,6 +119,38 @@ body{
         grid-row: 2;
         text-align: center;
         margin-right: -150px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+    }
+
+    .social-media{
+        grid-row: 2;
+        width: 0%;
+        margin-bottom: 30px;
+        margin-left: -110px;
+    }
+
+    #tarjeta:hover {
+        transform: scale(1.05);
+        place-items: center;
+        height: 530px;
+        width: 300px;
+    }
+
+    #tarjeta:hover .welcome-icon{
+        transform: scale(1.2);
+        margin-left: 0px;
+    }
+
+    .red{
+        width: 0px;
+    }
+
+    .red>img{
+        margin-right: 230px;
+        margin-bottom: -40px;
+    }
+
+    .red>a{
+        grid-row: 2;
     }
 }
