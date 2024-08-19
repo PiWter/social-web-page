@@ -62,14 +62,14 @@ body{
 .welcome-icon{
     margin-right: 49px;
     border-radius: 17px;
-    transition: transform 0.2s ease-in-out;
+    transition: 0.2s;
 }
 
 .welcome-text{
     margin-right: 20px;
     font-size: 26px;
     width: 100%;
-    transition: 0.1s;
+    transition: 0.2s;
 }
 
 .social-media{
@@ -91,7 +91,7 @@ body{
 .red>img{
     height: 30px;
     width: 30px;
-    margin-left: 60px;
+    margin-left: 90px;
 }
 
 .red>a{
@@ -102,7 +102,7 @@ body{
 #tarjeta:hover {
     transform: scale(1.05);
     height: 300px;
-    width: 580px;
+    width: 560px;
 }
 
 #tarjeta:hover .welcome-text {
@@ -111,6 +111,11 @@ body{
 
 #tarjeta:hover .social-media {
     opacity: 1;
+}
+
+#tarjeta:hover .welcome-icon{
+    transform: scale(1.2);
+    margin-left: 50px;
 }
 
 @media screen and (max-width: 564px) {
