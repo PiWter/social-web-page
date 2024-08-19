@@ -28,7 +28,7 @@ body{
 .page{
     display: grid;
     place-items: center;
-    grid-template-rows: 30vh 33vh 33vh;
+    height: 90dvh;
 }
 
 #tarjeta{
@@ -40,7 +40,6 @@ body{
     border-radius: 25px;
     backdrop-filter: blur(14px) brightness(.5);
     transition: 0.2s;
-    grid-row: 2;
 }
 
 .welcome-icon{
@@ -119,5 +118,6 @@ body{
         grid-row: 2;
         text-align: center;
         margin-right: -150px;
+        margin-bottom: 50px;
     }
 }
