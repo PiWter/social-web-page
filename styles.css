@@ -7,7 +7,7 @@ html {
 body{
     display: grid;
     place-items: center;
-    color: #ffffff;
+    color: #FFC0CB;
     font-family: "Quicksand", "Courier New";
 }
 
@@ -31,91 +31,94 @@ body{
     height: 90dvh;
 }
 
-#tarjeta{
+.card{
     display: grid;
     place-items: center;
     grid-template-columns: repeat(2, 1fr);
     height: 200px;
-    width: 500px;
     border-radius: 25px;
     backdrop-filter: blur(14px) brightness(.5);
     transition: 0.2s;
+    padding: 5px;
 }
 
-.welcome-icon{
-    margin-right: 49px;
+.card-image{
+    margin-right: 19px;
     border-radius: 17px;
     transition: 0.2s;
 }
 
-.welcome-text{
-    margin-right: 20px;
+.card-text{
+    transition: .2s;
     font-size: 26px;
-    width: 100%;
-    transition: 0.2s;
+    width: 220px;
+    padding-right: 10px;
 }
 
 .social-media{
     position: absolute;
     grid-column: 2;
     font-size: 20px;
-    width: 100%;
     transition: 0.2s;
     opacity: 0;
 }
 
-.red{
+.social{
     display: grid;
     grid-template-columns: 1% 99%;
     place-items: center;
     margin: 5px;
 }
 
-.red>img{
+.social>img{
     height: 30px;
     width: 30px;
     margin-left: 70px;
 }
 
-.red>a{
+.social>a{
     font-size: 18px;
     margin: 7px;
+    text-decoration: none;
     color: #FFC0CB;
+    transition: .15s;
 }
 
-#tarjeta:hover {
-    transform: scale(1.05);
-    height: 300px;
-    width: 530px;
+.social>a:hover {
+    color: #fff;
 }
 
-#tarjeta:hover .welcome-text {
+.card:hover {
+    padding: 50px;
+}
+
+.card:hover .card-text {
     opacity: 0;
 }
 
-#tarjeta:hover .social-media {
+.card:hover .social-media {
     opacity: 1;
 }
 
-#tarjeta:hover .welcome-icon{
+.card:hover .card-image{
     transform: scale(1.2);
-    margin-left: 60px;
 }
 
 @media screen and (max-width: 564px) {
-    #tarjeta{
+    .card{
         grid-template-rows: repeat(2, 1fr);
         height: 450px;
         width: 300px;
+        padding: 0px;
     }
 
-    .welcome-icon{
+    .card-image{
         margin-right: -150px;
-        margin-top: 10px;
+        margin-top: 15px;
         grid-row: 1;
     }
     
-    .welcome-text{
+    .card-text{
         grid-row: 2;
         text-align: center;
         margin-right: -150px;
@@ -124,33 +127,32 @@ body{
 
     .social-media{
         grid-row: 2;
-        width: 0%;
-        margin-bottom: 30px;
-        margin-left: -110px;
+        margin-left: -100px;
     }
 
-    #tarjeta:hover {
+    .card:hover {
         transform: scale(1.05);
         place-items: center;
-        height: 530px;
+        padding: 0px;
         width: 300px;
+        height: 530px;
     }
 
-    #tarjeta:hover .welcome-icon{
+    .card:hover .card-icon{
         transform: scale(1.2);
         margin-left: 0px;
     }
 
-    .red{
+    .social{
         width: 0px;
     }
 
-    .red>img{
+    .social>img{
         margin-right: 230px;
         margin-bottom: -40px;
     }
 
-    .red>a{
+    .social>a{
         grid-row: 2;
     }
 }
