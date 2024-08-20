@@ -72,6 +72,7 @@ body {
   grid-template-columns: 1% 99%;
   place-items: center;
   margin: 5px;
+  transition: 0.2s;
 }
 
 .social > img {
@@ -107,6 +108,10 @@ body {
 
 .card:hover .card-image {
   transform: scale(1.2);
+}
+
+.social:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 564px) {
