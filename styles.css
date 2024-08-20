@@ -73,6 +73,8 @@ body {
   place-items: center;
   margin: 5px;
   transition: 0.2s;
+  text-decoration: none;
+  color: #ffc0cb;
 }
 
 .social > img {
@@ -81,17 +83,11 @@ body {
   margin-left: 70px;
 }
 
-.social > a {
+.social > span {
   margin: 7px;
-  text-decoration: none;
   font-size: 23px;
-  color: #ffc0cb;
   transition: 0.15s;
   margin-left: 15px;
-}
-
-.social > a:hover {
-  color: #fff;
 }
 
 .card:hover {
@@ -112,6 +108,7 @@ body {
 
 .social:hover {
   transform: scale(1.1);
+  color: #fff;
 }
 
 @media screen and (max-width: 564px) {
