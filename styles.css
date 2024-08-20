@@ -55,7 +55,7 @@ body {
 
 .card-text {
   transition: 0.2s;
-  font-size: 26px;
+  font-size: 32px;
   width: 220px;
   padding-right: 10px;
 }
@@ -63,7 +63,6 @@ body {
 .social-media {
   position: absolute;
   grid-column: 2;
-  font-size: 20px;
   transition: 0.2s;
   opacity: 0;
 }
@@ -82,11 +81,12 @@ body {
 }
 
 .social > a {
-  font-size: 18px;
   margin: 7px;
   text-decoration: none;
+  font-size: 23px;
   color: #ffc0cb;
   transition: 0.15s;
+  margin-left: 15px;
 }
 
 .social > a:hover {
@@ -126,13 +126,14 @@ body {
   .card-text {
     grid-row: 2;
     text-align: center;
-    margin-right: -150px;
+    margin-right: -160px;
     margin-bottom: 40px;
   }
 
   .social-media {
     grid-row: 2;
     margin-left: -110px;
+    margin-bottom: 20px;
   }
 
   .card:hover {
