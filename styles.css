@@ -112,6 +112,10 @@ body {
 }
 
 @media screen and (max-width: 564px) {
+  #background > div {
+    background: url(assets/fondo-movil1.jpg) center/cover no-repeat;
+  }
+
   .card {
     grid-template-rows: repeat(2, 1fr);
     height: 450px;
